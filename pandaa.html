@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panda</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 30px 0px;
+            background-color: rgba(0, 0, 0, 0.21);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 40px;
+        }
+
+        nav div {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav div img {
+            width: 30px;
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.30), #4C21A8), url(./image\ 1\ 1.png);
+            height: 130vh;
+            background-size: cover;
+        }
+
+        nav h1 {
+            color: white;
+        }
+
+        nav ul li {
+            color: white;
+        }
+
+        .hero-text h1 {
+            color: white;
+            font-size: 80px;
+        }
+
+        .hero-btn1 {
+            height: 50px;
+            width: 200px;
+            background-color: #FE8235;
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .hero-btn2 {
+            height: 50px;
+            width: 200px;
+            background-color: transparent;
+            border: 2px solid #FE8235;
+            color: #FE8235;
+            font-size: 20px;
+        }
+
+        .hero {
+            display: flex;
+            align-items: end;
+            justify-content: space-around;
+            margin-top: 400px;
+        }
+
+        .hero-btns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .company {
+            padding: 50px;
+            padding-bottom: 50px;
+        }
+
+        .company ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .company ul li {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .revalution {
+            background-color: black;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            padding-left: 150px;
+        }
+
+        .revalution h1 {
+            color: white;
+            font-size: 100px;
+        }
+
+        .revalution p {
+            color: white;
+            font-size: 30px;
+            margin-top: 40px;
+        }
+
+        .what-nft {
+            background-color: black;
+            height: 80vh;
+        }
+
+        .uznft1 {
+            color: white;
+            padding-left: 80px;
+            padding-top: 40px;
+        }
+
+        .bor-text {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .borde-xx1 {
+            color: rgb(0, 0, 0);
+            border: 1px solid gray;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #FE8235;
+        }
+
+        .borde-xx2 {
+            color: rgb(0, 0, 0);
+            border: 1px solid gray;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #5224B5;
+        }
+
+        .borde-xx3 {
+            color: rgb(0, 0, 0);
+            border: 1px solid gray;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #5224B5;
+        }
+
+        .bor-text i {
+            font-size: 90px;
+        }
+
+        .katta-text {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .katta-text i {
+            font-size: 80px;
+        }
+
+        .border-tt1 {
+            color: rgb(0, 0, 0);
+            border: 1px solid gray;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #5224B5;
+        }
+
+        .border-tt2 {
+            color: rgb(0, 0, 0);
+            border: 1px solid gray;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #5224B5;
+        }
+
+        .border-tt3 {
+            color: rgb(0, 0, 0);
+            border: 1px solid gray;
+            width: 300px;
+            height: 250px;
+            text-align: center;
+            background-color: #5224B5;
+        }
+
+        .textuz-div {
+            background-color: black;
+            height: 50vh;
+        }
+
+        .text-xxs {
+            color: white;
+            padding-left: 90px;
+            font-size: 20px;
+        }
+
+        .textre1 {
+            margin-left: 1200px;
+            margin-top: -150px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .set-div {
+            background-color: black;
+            height: 150vh;
+        }
+
+        .panda-card {
+            width: 360px;
+            height: 480px;
+            background-color: #5224B5;
+            color: white;
+        }
+
+        .panda-card h3,
+        span,
+        .rasm452 {
+            margin-left: 33px;
+        }
+
+        .actor {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            margin-top: 70px
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            margin-left: 90px;
+            height: 30px;
+            width: 150px;
+            font-size: 20px;
+            color: white;
+
+        }
+
+        .panda-kattadiv {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-around;
+            gap: 90px;
+        }
+
+        .pand-kattadiv {
+            margin-top: 35px;
+            display: flex;
+            justify-content: space-around;
+            gap: 90px;
+        }
+
+        .pand-div {
+            width: 360px;
+            height: 480px;
+            background-color: #5224B5;
+            color: white;
+        }
+
+        .nexus-div {
+            margin-top: 70px;
+        }
+
+        .card-nexus {
+            width: 268px;
+            height: 264px;
+            background-color: #5224B5;
+        }
+
+        .steps img {
+            width: 320px;
+        }
+
+        .steps {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .steps span {
+            color: aquamarine;
+        }
+
+        .card-main {
+            display: flex;
+            justify-content: center;
+        }
+
+        .cardus {
+            position: relative;
+            top: 50px;
+        }
+
+        .card3us {
+            position: relative;
+            top: 130px;
+        }
+
+        .card4us {
+            position: relative;
+            top: 130px;
+        }
+
+        .card5us {
+            position: relative;
+            bottom: 40px;
+        }
+
+        .nuxus-dur {
+            background-color: rgb(34, 34, 34);
+            height: 135vh;
+        }
+
+        .pandani-text {
+            color: white;
+            padding-top: 160px;
+            padding-left: 170px;
+        }
+
+        .nexus-upd {
+            background-color: black;
+            height: 120vh;
+        }
+
+        .nexus-upg1 {
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .kata-div {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .subnex1 {
+            width: 180px;
+            height: 30px;
+            color: #FE8235;
+            border: 1px solid #FE8235;
+            background-color: transparent;
+        }
+
+        .subnex2 {
+            width: 60px;
+            height: 30px;
+            background-color: #FE8235;
+            color: white;
+        }
+
+        .nuxus-img1 {
+            margin-top: 10px;
+        }
+
+        .yashil {
+            width: 1725px;
+            height: 200px;
+            background-color: #7FFA8A;
+            margin-top: -130px;
+        }
+
+        footer {
+            background-color: #5224B5;
+            height: 50vh;
+        }
+        .footer-katta{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 50px;
+            color: white;
+        }
+        .footer-katta i{
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+
+            <h1>NFT Nexus</h1>
+
+            <ul>
+                <li>Home</li>
+                <li>Discover</li>
+                <li>Download</li>
+                <li>Community</li>
+                <li>Explore</li>
+            </ul>
+
+            <div class="Search">
+                <img class="white" src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-5.png"
+                    alt="">
+
+                <img class="black" src="https://cdn-icons-png.flaticon.com/512/5993/5993271.png" alt="">
+            </div>
+        </nav>
+
+        <div class="hero">
+            <div class="hero-text">
+                <h1>
+                    Discover <br>
+                    THE World of NFT <br>
+                    with NFT NEXUS
+                </h1>
+
+                <p>
+                    Unblock the Power of Digital Collectibles with
+                    <br>
+                    Our Revolutionary Platform
+                </p>
+            </div>
+
+            <div class="hero-btns">
+                <button class="hero-btn1">LOG IN</button>
+                <button class="hero-btn2">REGISTER</button>
+            </div>
+        </div>
+    </header>
+    <section class="company">
+        <ul>
+            <li>
+                <img src="./2000px-BTC_Logo 1.png" alt="">
+                <p>BITCOIN</p>
+            </li>
+            <li>
+                <img style="width: 150px;" src="./BLCK.png" alt="">
+                <p>BLOCKCHINE</p>
+            </li>
+            <li>
+                <img style="width: 100px;" src="./image.png" alt="">
+                <p>TETHER</p>
+            </li>
+            <li>
+                <img style="width: 150px;" src="./image copy.png" alt="">
+                <p>ETHEREUM</p>
+            </li>
+        </ul>
+    </section>
+    <section class="revalution">
+        <h1>Are you ready to join <br>
+            the NFT revolution?</h1>
+        <p>
+            NFT Nexus is here to help you explore the exciting <br> world of
+            Non-Fungible Tokens and unlock their full <br> potential. <br><br>
+
+            Our platform provides you with a safe and secure <br> environment to
+            buy, sell, and trade unique digital <br> assets like never before.
+            <br><br>
+
+            With our user-friendly interface, you can discover <br> and own
+            one-of-a-kind digital collectibles with <br> ease. Join us today and
+            start your NFT journey!
+        </p>
+    </section>
+
+    <section class="what-nft">
+        <div class="uznft1">
+            <h1>Why NFT Nexus?</h1>
+        </div>
+
+        <div class="bor-text">
+            <div class="borde-xx1">
+                <i class="ri-shield-check-line"></i>
+                <h2>Safe and secure platform for NFT transactions</h2>
+            </div>
+
+            <div class="borde-xx2">
+                <i class="ri-qr-scan-fill"></i>
+                <h2>Wide selection of uiqune digital collectibles</h2>
+            </div>
+
+            <div class="borde-xx3">
+                <i class="ri-user-fill"></i>
+                <h2>User-friendly interface for easy navigation</h2>
+            </div>
+        </div>
+
+        <div class="katta-text">
+            <div class="border-tt1">
+                <i class="ri-phone-fill"></i>
+                <h2>24/7 customer support to assist you with any questions</h2>
+            </div>
+
+            <div class="border-tt2">
+                <i class="ri-lock-unlock-fill"></i>
+                <h2>Access to the latest NFT market trends and insights</h2>
+            </div>
+
+            <div class="border-tt3">
+                <i class="ri-file-ai-fill"></i>
+                <h2>Access to the latest NFT market trends and insights</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="textuz-div">
+        <div class="text-xxs">
+            <h1>Discover the Best Rare NFTs <br> on NFT Nexus</h1>
+            <p>Find the Most Unique <br> and Valuable Digital <br> Collectibles in the World"</p>
+        </div>
+        <div class="textre1">
+            <img src="./Profile.svg" alt="">
+            <p>At NFT Nexus, we are dedicated to bringing you the <br> best and rarest NFTs in the world. <br> Our
+                platform showcases a wide selection of one-of-a-kind <br> digital collectibles that are sure to impress
+                even <br> the most discerning of collectors. From rare digital <br> art to collectible virtual
+                items,<br> you'll find it all here. Take a look at some of our top picks and <br> find your next
+                must-have NFT.</p>
+        </div>
+    </section>
+
+    <section class="set-div">
+        <div class="buttons">
+            <button style=" background-color: rgb(65, 65, 65); color: white;">ALL</button>
+            <button style=" background-color: rgb(65, 65, 65); color: white;">ART</button>
+            <button style=" background-color: rgb(65, 65, 65); color: white;">GAME</button>
+            <button style=" background-color: rgb(65, 65, 65); color: white;">PHOTOGRAPHY</button>
+            <button style=" background-color: rgb(65, 65, 65); color: white;">ANIMAL</button>
+        </div>
+
+        <div class="panda-kattadiv">
+
+            <div class="panda-card">
+                <img src="./Mask group.svg" alt="">
+                <h3>Panda grandede</h3>
+                <img class="rasm452" src="./Group 33.svg" alt="">
+                <span class="actor">
+                    <img src="./Ellipse 2 (7).svg" alt="">
+                    <h4>Jacob Jones</h4>
+                </span>
+            </div>
+
+            <div class="panda-card">
+                <img src="./Mask group (1).svg" alt="">
+                <h3>Panda Gun</h3>
+                <img class="rasm452" src="./Group 33.svg" alt="">
+                <span class="actor">
+                    <img src="./Ellipse 3 (6).svg" alt="">
+                    <h4>Leslie Alexander</h4>
+                </span>
+            </div>
+
+            <div class="panda-card">
+                <img src="./image 4.svg" alt="">
+                <h3>Panda Gun</h3>
+                <img class="rasm452" src="./Group 33.svg" alt="">
+                <span class="actor">
+                    <img src="./Ellipse 4 (10).svg" alt="">
+                    <h4>Arlene McCoy</h4>
+                </span>
+            </div>
+        </div>
+
+        <div class="pand-kattadiv">
+            <div class="pand-div">
+                <img src="./image 6.svg" alt="">
+                <h3>Panda Arrow</h3>
+                <img class="rasm452" src="./Group 33.svg" alt="">
+                <span class="actor">
+                    <img src="./Ellipse 6.svg" alt="">
+                    <h4>Ralph Edwards</h4>
+                </span>
+            </div>
+
+            <div class="pand-div">
+                <img src="./image 5.png" alt="">
+                <h3>Panda Arrow</h3>
+                <img class="rasm452" src="./Group 33.svg" alt="">
+                <span class="actor">
+                    <img src="./Ellipse 5 (7).svg" alt="">
+                    <h4>Jane Cooper</h4>
+                </span>
+            </div>
+
+            <div class="pand-div">
+                <img src="./Mask group (2).svg" alt="">
+                <h3>Panda Arrow</h3>
+                <img class="rasm452" src="./Group 33.svg" alt="">
+                <span class="actor">
+                    <img src="./Ellipse 7.svg" alt="">
+                    <h4>Courtney Henry</h4>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="nuxus-dur">
+        <div class="card-main">
+
+            <div class="crad1">
+                <div class="steps">
+                    <span>step 1</span>
+                    <img src="./image-removebg-preview (6) (3).png" alt="">
+                </div>
+                <div class="card-nexus">
+                    <img src="./Shield Done.svg" alt="">
+                    <p>Create an account on <br>NFT Nexus</p>
+                </div>
+            </div>
+
+            <div class="crad1 cardus">
+                <div class="steps">
+                    <span>step 2</span>
+                    <img src="./image-removebg-preview (6) (3).png" alt="">
+                </div>
+                <div class="card-nexus">
+                    <img src="./Shield Done.svg" alt="">
+                    <p>Create an account on <br>NFT Nexus</p>
+                </div>
+            </div>
+
+            <div class="crad1 card3us">
+                <div class="steps">
+                    <span>step 3</span>
+                </div>
+                <div class="card-nexus">
+                    <img src="./Shield Done.svg" alt="">
+                    <p>Create an account on <br>NFT Nexus</p>
+                </div>
+                <img src="./Line 5.svg" alt="">
+            </div>
+
+        </div>
+
+        <div class="card-main card4us">
+
+            <div class="crad1">
+                <div class="steps">
+                    <span>step 1</span>
+                    <img src="./image-removebg-preview (6) (3).png" alt="">
+                </div>
+                <div class="card-nexus">
+                    <img src="./Shield Done.svg" alt="">
+                    <p>Create an account on <br>NFT Nexus</p>
+                </div>
+            </div>
+
+            <div class="crad1 card5us">
+                <div class="steps">
+                    <span>step 1</span>
+                    <img src="./image-removebg-preview (6) (3).png" alt="">
+                </div>
+                <div class="card-nexus">
+                    <img src="./Shield Done.svg" alt="">
+                    <p>Create an account on <br>NFT Nexus</p>
+                </div>
+            </div>
+
+            <div class="crad1 card6us">
+                <div class="steps">
+                    <span>step 1</span>
+                </div>
+                <div class="card-nexus">
+                    <img src="./Shield Done.svg" alt="">
+                    <p>Create an account on <br>NFT Nexus</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="pandani-text">
+            <h1>How to Upload Your Art as an <br>NFT on NFT Nexus</h1>
+            <p>Bring your artwork to life as a Non-Fungible Token on [Brand Name]. <br> Our platform makes it easy for
+                artists and collectors alike to upload <br>and sell their unique digital creations. <br><br> Follow
+                these simple steps to get started:</p>
+        </div>
+    </section>
+
+    <section class="nexus-upd">
+        <div class="nexus-upg1">
+            <h1>Updates on upcoming events and <br>activities related to NFTs</h1>
+        </div>
+        <div class="kata-div">
+            <input class="subnex1" type="email" name="EMAIL" id="" placeholder="EMAIL">
+            <button class="subnex2">SUMBIT</button>
+        </div>
+
+        <div class="nuxus-img1">
+            <center>
+                <img src="./image 9.svg" alt="">
+            </center>
+            <div class="yashil">
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-katta">
+            <ul>
+                <img src="./Group 60.png" alt="">
+                <li>3891 Ranchview Dr. <br> Richardson, California 62639</li>
+            </ul>
+            <ul>
+                <p>Company</p>
+                <li>About Us</li>
+                <li>Discover</li>
+                <li>Download</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </ul>
+            <ul>
+                <p>Services</p>
+                <li>Pricing</li>
+                <li>Products</li>
+                <li>Customers</li>
+                <li>Portfolio</li>
+                <li>Success Stories</li>
+                <li>More</li>
+            </ul>
+
+            <ul>
+                <p>Support</p>
+                <li>About us</li>
+                <li>Legal</li>
+                <li>Career</li>
+                <li>Contact</li>
+            </ul>
+
+            <ul>
+                <li>Follow Us</li>
+                <i class="ri-telegram-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-twitter-fill"></i>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
